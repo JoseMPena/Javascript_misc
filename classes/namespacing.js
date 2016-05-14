@@ -17,7 +17,7 @@ var Kennel = function() {
 
   public_methods.adoptRabbit = function() {
     rabbits--;
-    console.log("A dog has found a home!");
+    console.log("A rabbit has found a home!");
   };
 
   public_methods.reset = function() {
@@ -30,12 +30,12 @@ var Kennel = function() {
   return public_methods;
 };
 
-var kennel1 = new Kennel();
+var kennel = new Kennel();
 //Test Public methods are reachable from the outside
-kennel1.adoptRabbit();
-kennel1.adoptCat();
-kennel1.adoptDog();
-kennel1.reset();
+kennel.adoptRabbit();
+kennel.adoptCat();
+kennel.adoptDog();
+kennel.reset();
 
 //Test non-public attributes are not reachable from the outside
-console.log(kennel1.cats); //return undefined
+console.log(kennel.cats); //return undefined
